@@ -192,15 +192,15 @@ const Charts = () => {
               <div className="card-content">{render()}</div>
               <footer className="card-footer">
                 <a
-                  href={`https://github.com/RakanNimer/react-google-charts/blob/ts-rewrite/demo/charts/${name}.tsx`}
+                  href={`https://github.com/RakanNimer/react-google-charts-primitives/tree/master/demo/src/charts/${name}.tsx`}
                   className="card-footer-item"
                   target="_blank"
                 >
                   View Code
                 </a>
-                <a href="#" className="card-footer-item">
+                {/* <a href="#" className="card-footer-item">
                   Edit
-                </a>
+                </a> */}
               </footer>
             </div>
           )}
