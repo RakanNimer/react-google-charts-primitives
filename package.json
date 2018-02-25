@@ -11,7 +11,7 @@
       "parcel build demo/src/index.tsx  -d demo/build/ && cp demo/public/prod/index.html demo/build/",
 
     "docs":
-      "typedoc src/index.tsx --out docs --name 'React Google Charts Primitives'",
+      "typedoc src/index.tsx --out docs --name 'React Google Charts Primitives' && touch docs/.nojekyll",
 
     "docs:serve": "serve docs/ --open",
     "start": "parcel demo/public/dev/index.html",
