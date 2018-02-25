@@ -198,9 +198,13 @@ const Charts = () => {
                 >
                   View Code
                 </a>
-                {/* <a href="#" className="card-footer-item">
-                  Edit
-                </a> */}
+                <a
+                  href={`https://developers.google.com/chart/interactive/docs/gallery/${name.toLowerCase()}`}
+                  className="card-footer-item"
+                  target="_blank"
+                >
+                  Reference
+                </a>
               </footer>
             </div>
           )}
