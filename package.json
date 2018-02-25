@@ -8,7 +8,7 @@
     "build":
       "rm -rf ./build/ && rm -rf ./dist/ && tsc && node build-scripts/build-bundles.js",
     "build:demo":
-      "parcel build demo/src/index.tsx  -d demo/build/ && cp demo/public/prod/index.html demo/build/",
+      "parcel build demo/src/index.tsx  -d demo/build/ && cp demo/public/prod/index.html demo/build/ && cp demo/build/index.html demo/build/200.html",
 
     "deploy:demo":
       "cd demo/build/ && surge ./ --domain react-google-charts-primitives.surge.sh",
