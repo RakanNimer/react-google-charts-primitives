@@ -1,0 +1,56 @@
+{
+  "name": "react-google-charts-primitives",
+  "version": "0.1.2",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build":
+      "rm -rf ./build/ && rm -rf ./dist/ && tsc && node build-scripts/build-bundles.js",
+    "build:demo":
+      "parcel build demo/src/index.tsx  -d demo/build/ && cp demo/public/prod/index.html demo/build/",
+
+    "docs":
+      "typedoc src/index.tsx --out docs --name 'React Google Charts Primitives'",
+
+    "docs:serve": "serve docs/ --open",
+    "start": "parcel demo/public/dev/index.html",
+
+    "test": "cypress open",
+    "test:ci":
+      "(npm start &) && $(npm bin)/wait-on http://localhost:1234/ && $(npm bin)/cypress run --record --key 992c387d-9654-42ea-aad7-bb51e16aec9b",
+
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-test-renderer": "^16.0.1",
+    "comment-json": "^1.1.3",
+    "cypress": "^2.0.3",
+    "jest": "^22.3.0",
+    "parcel-bundler": "^1.6.1",
+    "prettier": "^1.9.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.2.0",
+    "rollup": "^0.56.2",
+    "typedoc": "^0.10.0",
+    "typescript": "^2.7.2",
+    "wait-on": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": ["**/__tests__/*.(ts|tsx|js)"]
+  },
+  "dependencies": {
+    "loadjs": "^3.5.2"
+  }
+}
