@@ -89,33 +89,33 @@ export type GoogleChartLoaderState = {
 * https://developers.google.com/chart/interactive/docs/reference#google.visualization.drawchart
 *
 */
-export enum GoogleChartWrapperChartType {
-  AnnotationChart = "AnnotationChart",
-  AreaChart = "AreaChart",
-  BarChart = "BarChart",
-  BubbleChart = "BubbleChart",
-  Calendar = "Calendar",
-  CandlestickChart = "CandlestickChart",
-  ColumnChart = "ColumnChart",
-  ComboChart = "ComboChart",
-  DiffChart = "DiffChart",
-  DonutChart = "DonutChart",
-  Gantt = "Gantt",
-  Gauge = "Gauge",
-  GeoChart = "GeoChart",
-  Histogram = "Histogram",
-  LineChart = "LineChart",
-  Map = "Map",
-  OrgChart = "OrgChart",
-  PieChart = "PieChart",
-  Sankey = "Sankey",
-  ScatterChart = "ScatterChart",
-  SteppedAreaChart = "SteppedAreaChart",
-  Table = "Table",
-  TreeMap = "TreeMap",
-  WaterfallChart = "WaterfallChart",
-  WordTree = "WordTree"
-}
+
+export type GoogleChartWrapperChartType =
+  | "AnnotationChart"
+  | "AreaChart"
+  | "BarChart"
+  | "BubbleChart"
+  | "Calendar"
+  | "CandlestickChart"
+  | "ColumnChart"
+  | "ComboChart"
+  | "DiffChart"
+  | "DonutChart"
+  | "Gantt"
+  | "Gauge"
+  | "GeoChart"
+  | "Histogram"
+  | "LineChart"
+  | "Map"
+  | "OrgChart"
+  | "PieChart"
+  | "Sankey"
+  | "ScatterChart"
+  | "SteppedAreaChart"
+  | "Table"
+  | "TreeMap"
+  | "WaterfallChart"
+  | "WordTree";
 
 // https://developers.google.com/chart/interactive/docs/reference#google.visualization.drawchart
 export interface ChartWrapperOptions {
@@ -164,11 +164,7 @@ export type GoogleChartWrapper = {
   setOptions: (options_obj: ChartWrapperProps["options"]) => void; //
 };
 
-export enum GoogleVizEventName {
-  ready = "ready",
-  error = "error",
-  select = "select"
-}
+export type GoogleVizEventName = "ready" | "error" | "select";
 
 export type GoogleVizEvents = {
   addListener: (

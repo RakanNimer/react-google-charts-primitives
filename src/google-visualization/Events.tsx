@@ -60,17 +60,17 @@ class VizEvents extends React.Component<VizEventsProps, {}> {
     // viz.removeAllListeners(chartWrapper)
 
     if (onReady !== null) {
-      viz.addListener(chartWrapper, GoogleVizEventName.ready, () => {
+      viz.addListener(chartWrapper, "ready", () => {
         onReady(chartWrapper);
       });
     }
     if (onError !== null) {
-      viz.addListener(chartWrapper, GoogleVizEventName.error, () => {
+      viz.addListener(chartWrapper, "error", () => {
         onError(chartWrapper);
       });
     }
     if (onSelect !== null) {
-      viz.addListener(chartWrapper, GoogleVizEventName.select, () => {
+      viz.addListener(chartWrapper, "select", () => {
         onSelect(chartWrapper.getChart().getSelection());
       });
     }

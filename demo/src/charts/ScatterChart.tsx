@@ -1,6 +1,7 @@
 import * as React from "react";
 import { dataBank } from "../dataBank";
 import { ChartFromPoints } from "../../../src/Chart";
+// import { ChartFromPoints } from "../../../dist/index.cjs";
 
 const points = dataBank().points.attentionSpanOverTime;
 const options = dataBank().options;

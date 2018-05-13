@@ -40,7 +40,7 @@ If you're not interested in powerful features provided by Google Charts then you
 
 If you have a React app and want to render and interact with a Google Chart then `ChartRenderer` should make it simpler.
 
-Google Charts offers very powerful primitives to build all kind of charts.
+Google Charts offers primitives to build all kind of charts.
 
 The ChartRenderer loads and gives you access to :
 

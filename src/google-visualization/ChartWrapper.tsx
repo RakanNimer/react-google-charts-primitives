@@ -16,7 +16,7 @@ class ChartWrapper extends React.Component<ChartWrapperProps, {}> {
   // @ts-ignore
   arrayToDataTable: GoogleArrayToDataTable;
   static defaultProps = {
-    chartType: GoogleChartWrapperChartType.ColumnChart,
+    chartType: "ColumnChart",
     dataTable: [[]],
     options: {},
     dataSourceUrl: "",
@@ -63,16 +63,15 @@ class ChartWrapper extends React.Component<ChartWrapperProps, {}> {
     console.warn("Error");
   }
   componentDidMount() {
-    console.log(`Mounting ChartWrapper`);
     this.chartWrapper.draw();
   }
   componentDidUpdate() {
     console.log(`Updating ChartWrapper`);
-    // const { chartType, options, containerId } = this.props;
-    // this.chartWrapper.setChartType(chartType);
-    // this.chartWrapper.setContainerId(containerId as string);
-    // this.chartWrapper.setOptions(options);
-    // this.chartWrapper.draw();
+    const { chartType, options, containerId } = this.props;
+    this.chartWrapper.setChartType(chartType);
+    this.chartWrapper.setContainerId(containerId as string);
+    this.chartWrapper.setOptions(options);
+    this.chartWrapper.draw();
   }
   render() {
     const { render = () => null, children } = this.props;
