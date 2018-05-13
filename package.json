@@ -7,12 +7,14 @@
   "scripts": {
     "build": "rollup -c",
     "build:demo":
-      "parcel build demo/src/index.tsx  -d demo/build/ && cp demo/public/prod/index.html demo/build/ && cp demo/build/index.html demo/build/200.html",
+      "parcel build demo/src/index.ts  -d demo/build/ && cp demo/public/prod/index.html demo/build/ && cp demo/build/index.html demo/build/200.html",
     "deploy:demo":
       "cd demo/build/ && surge ./ --domain react-google-charts-primitives.surge.sh",
     "docs":
-      "typedoc src/index.tsx --out docs --name 'React Google Charts Primitives' && touch docs/.nojekyll",
+      "typedoc src/index.ts --out docs --name 'React Google Charts Primitives' && touch docs/.nojekyll",
     "docs:serve": "serve docs/ --open",
+    "docs:deploy":
+      "cd docs/ && surge ./ --domain react-google-charts-primitives-typedocs.surge.sh",
     "start": "parcel demo/public/dev/index.html",
     "test": "cypress open",
     "test:ci":

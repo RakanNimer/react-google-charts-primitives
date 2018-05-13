@@ -30,7 +30,7 @@ Depends on what you're trying to do :
 
 If you're not interested in powerful features provided by Google Charts then you probably should use `ChartFromPoints` (or another library ?).
 
-[Docs](LINK_TO_DOCS) [Demo](LINK_TO_DEMO)
+[Demo](https://w6j4v5y3r7.codesandbox.io/)
 
 #### Problem : I want to render some charts with the Google Charts API.
 
@@ -52,29 +52,29 @@ The ChartRenderer loads and gives you access to :
 
 Typescript typings for these 3 are provided, to try and cut down on time spent searching the docs.
 
-[Docs](LINK_TO_DOCS) [Demo](LINK_TO_DEMO)
+[Demo](https://w6j4v5y3r7.codesandbox.io/)
 
-## All Examples
+## All Demos
 
-* [AnnotationChart](./demo/src/charts/AnnotationChart.tsx)
-* [AreaChart](./demo/src/charts/AreaChart.tsx)
-* [BarChart](./demo/src/charts/BarChart.tsx)
-* [BubbleChart](./demo/src/charts/BubbleChart.tsx)
-* [Calendar](./demo/src/charts/Calendar.tsx)
-* [CandlestickChart](./demo/src/charts/CandlestickChart.tsx)
-* [ColumnChart](./demo/src/charts/ColumnChart.tsx)
-* [DonutChart](./demo/src/charts/DonutChart.tsx)
-* [GanttChart](./demo/src/charts/GanttChart.tsx)
-* [GaugeChart](./demo/src/charts/GaugeChart.tsx)
-* [GeoChart](./demo/src/charts/GeoChart.tsx)
-* [Histogram](./demo/src/charts/Histogram.tsx)
-* [LineChart](./demo/src/charts/LineChart.tsx)
-* [OrgChart](./demo/src/charts/OrgChart.tsx)
-* [PieChart](./demo/src/charts/PieChart.tsx)
-* [Sankey](./demo/src/charts/Sankey.tsx)
-* [ScatterChart](./demo/src/charts/ScatterChart.tsx)
-* [SteppedAreaChart](./demo/src/charts/SteppedAreaChart.tsx)
-* [TableChart](./demo/src/charts/TableChart.tsx)
-* [TreeMap](./demo/src/charts/TreeMap.tsx)
-* [WaterfallChart](./demo/src/charts/WaterfallChart.tsx)
-* [WordTree](./demo/src/charts/WordTree.tsx)
+* [AnnotationChart](https://w6j4v5y3r7.codesandbox.io/AnnotationChart/)
+* [AreaChart](https://w6j4v5y3r7.codesandbox.io/AreaChart/)
+* [BarChart](https://w6j4v5y3r7.codesandbox.io/BarChart/)
+* [BubbleChart](https://w6j4v5y3r7.codesandbox.io/BubbleChart/)
+* [Calendar](https://w6j4v5y3r7.codesandbox.io/Calendar/)
+* [CandlestickChart](https://w6j4v5y3r7.codesandbox.io/CandlestickChart/)
+* [ColumnChart](https://w6j4v5y3r7.codesandbox.io/ColumnChart/)
+* [DonutChart](https://w6j4v5y3r7.codesandbox.io/DonutChart/)
+* [GanttChart](https://w6j4v5y3r7.codesandbox.io/GanttChart/)
+* [GaugeChart](https://w6j4v5y3r7.codesandbox.io/GaugeChart/)
+* [GeoChart](https://w6j4v5y3r7.codesandbox.io/GeoChart/)
+* [Histogram](https://w6j4v5y3r7.codesandbox.io/Histogram/)
+* [LineChart](https://w6j4v5y3r7.codesandbox.io/LineChart/)
+* [OrgChart](https://w6j4v5y3r7.codesandbox.io/OrgChart/)
+* [PieChart](https://w6j4v5y3r7.codesandbox.io/PieChart/)
+* [Sankey](https://w6j4v5y3r7.codesandbox.io/Sankey/)
+* [ScatterChart](https://w6j4v5y3r7.codesandbox.io/ScatterChart/)
+* [SteppedAreaChart](https://w6j4v5y3r7.codesandbox.io/SteppedAreaChart/)
+* [TableChart](https://w6j4v5y3r7.codesandbox.io/TableChart/)
+* [TreeMap](https://w6j4v5y3r7.codesandbox.io/TreeMap/)
+* [WaterfallChart](https://w6j4v5y3r7.codesandbox.io/WaterfallChart/)
+* [WordTree](https://w6j4v5y3r7.codesandbox.io/WordTree/)

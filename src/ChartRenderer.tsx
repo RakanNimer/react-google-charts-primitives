@@ -6,7 +6,8 @@ import {
   GoogleChartPackages,
   GoogleDataTable,
   GoogleArrayToDataTable,
-  GoogleChartWrapper
+  GoogleChartWrapper,
+  GoogleChartWrapperChartType
 } from "./types";
 
 import { ensureFunction } from "./utils/ensureFunction";
@@ -69,7 +70,7 @@ export class ChartRenderer extends React.Component<ChartRendererProps, {}> {
           packages={packages}
           render={() => (
             <ChartWrapper
-              chartType={chartType}
+              chartType={chartType as GoogleChartWrapperChartType}
               containerId={this.containerId}
               options={options}
               onReady={(
